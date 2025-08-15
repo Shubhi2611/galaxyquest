@@ -1,0 +1,56 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.box{
+			width:200px;
+			height:200px;
+			background: #5c8b6d;
+			margin-left: 20px;
+			transition: linear 0.3s;
+		}
+		.reset{
+			margin-top:10px;
+			margin-left: 100px;
+		
+			
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".a1").click(function(){
+				$(".box").css({"background":"#8f5d4e","font-size":"32px",
+			"text-align": "center",
+			"padding": "50px","border-radius":"100px"});
+			});
+			$(".a2").click(function(){
+				$(".box").css({"background":"#4d5c9e","font-size":"48px",
+			"text-align": "left","font-family":"chiller",
+			"padding": "70px","border-radius":"150px 150px"});
+			});
+			$(".a3").click(function(){
+				$(".box").css({"background":"#9c5d6f","font-size":"60px",
+			"text-align": "right",
+			"padding": "100px","border-radius":"180px"});
+			});
+			$(".a4").click(function(){
+				$(".box").css({"background":"#662bcf","font-size":"72px",
+			"text-align": "center", "font-family":"creepster",
+			"padding": "80px","border-radius":"100px 0 100px 0"});
+			});
+		});
+	</script>
+</head>
+<body>
+    <div class="box"> hello</div>
+    <button class="a1">ani1</button>
+       <button class="a2">ani2</button>
+          <button class="a3">ani3</button>
+             <button class="a4">ani4</button>
+</body>
+</html>
